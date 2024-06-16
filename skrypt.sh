@@ -35,3 +35,11 @@ for ((i=1; i<=$number_of_files; i++)); do
     echo "Script name: $0" >> $filename
     echo "Creation date: $(date)" >> $filename
 done
+show_help() {
+    echo "Pomoc:"
+    echo "Użycie: skrypt.sh [OPCJE]"
+    echo "Dostępne opcje:"
+    echo "  --help       Wyświetla pomoc"
+    echo "  -a, --option-a    Opcja A"
+    echo "  -b, --option-b    Opcja B"
+}
